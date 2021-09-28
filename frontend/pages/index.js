@@ -8,10 +8,9 @@ export default function Home() {
         <title>Onebyte Website</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="py-4">
+      <div className="py-4">
         <Gallery/>
-      </main>
+      </div>
     </div>
   )
 }
