@@ -4,9 +4,21 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    letterSpacing: {
+      widest: '.2em',
+    },
+    aspectRatio: {
+      1: '1',
+      2: '2',
+      3: '3',
+      4: '4',
+    }
   },
   variants: {
     extend: {},
+    aspectRatio: ['responsive', 'hover']
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
