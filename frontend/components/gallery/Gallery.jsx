@@ -74,7 +74,7 @@ const products = [
   {
     id: 10,
     caption: "People at museum",
-    album: "San Francisco, 2017.",
+    album: "SFMOMA, 2017.",
     imageSrc: "/images/10.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
@@ -82,7 +82,7 @@ const products = [
   {
     id: 11,
     caption: "SFMOMA",
-    album: "SFMOMA, 2017.",
+    album: "San Francisco, 2017.",
     imageSrc: "/images/11.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
@@ -101,9 +101,9 @@ export default function Gallery() {
   return (
     <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-10 lg:grid-cols-2 xl:grid-cols-3 bg-white">
       {products.map((product) => (
-        <div className="relative cursor-pointer">
-          <a key={product.id} className="group">
-            <div className="w-full overflow-hidden ">
+        <div className="relative cursor-pointer" key={product.id}>
+          <a  className="group">
+            <div className="w-full h-full overflow-hidden ">
               <img
                 src={product.imageSrc}
                 alt={product.imageAlt}
