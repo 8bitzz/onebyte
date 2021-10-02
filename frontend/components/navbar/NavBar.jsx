@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <div className="fixed w-full z-40 top-0 bg-white px-20 py-10 font-extralight tracking-widest uppercase">
-      <div className="h-full flex justify-between items-center py-3">
+    <div className="fixed w-full z-40 top-0 bg-white px-20 py-8 font-extralight tracking-widest uppercase">
+      <div className="h-full flex justify-between items-end py-3">
         <Link href="/">
           <div className="flex h-full justify-center items-center cursor-pointer">
-            <span className="text-xl cursor-pointer">Onebyte</span>
+            <span className="text-2xl cursor-pointer font-bold">Onebyte</span>
           </div>
         </Link>
         <div className="flex h-full justify-end items-center cursor-pointer">
